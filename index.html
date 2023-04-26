@@ -5,25 +5,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>tic tac toe</title>
 	<link rel="stylesheet" href="tictactoe.css">
-
 </head>
 
 
-<body>
+<body background="back.png">
+	<h2 id="heading" onclick="Fun">Tic Tac Toe</h2>
 	
-	<h2 id="heading" align="center" onclick="Fun">kata kuti</h3>
-	<div id="board">
-		<div class="box">box</div>
-		<div class="box">box</div>
-		<div class="box">box</div>
-		<div class="box">box</div>
-		<div class="box">box</div>
-		<div class="box">box</div>
-		<div class="box">box</div>
-		<div class="box">box</div>
-		<div class="box">box</div>
+	<div class="board">
+		<div class="box">X</div>
+		<div class="box">X</div>
+		<div class="box">O</div>
+		<div class="box">X</div>
+		<div class="box">O</div>
+		<div class="box">X</div>
+		<div class="box">X</div>
+		<div class="box">0</div>
+		<div class="box">X</div>
 	</div>
-
+	<!-- buttons to control -->
+	<button id="playX" onclick="Fun()">Play as X</button>
+	<button id="playO" onclick="Fun">Play as O</button>
+	<button id="stop" onclick="Fun">Play Again</button>
+	
 	<!-- type="text/javascript"
 	src="tictactoe.css"-->
 	<script src="tictactoe.js"></script>

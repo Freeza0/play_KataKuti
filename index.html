@@ -8,24 +8,26 @@
 </head>
 
 
-<body background="back.png">
-	<h2 id="heading" onclick="Fun">Tic Tac Toe</h2>
-	
-	<div class="board">
+<body>
+	<h2 id="heading" onclick="Fun()">Tic Tac Toe</h2>
+	<div id="intro">
+		<p>This is for my friends. plz come and play tic tac toe. this is how the bot will learn to play.</p>
+	</div>
+	<div id="board">
 		<div class="box">X</div>
 		<div class="box">X</div>
 		<div class="box">O</div>
 		<div class="box">X</div>
 		<div class="box">O</div>
-		<div class="box">X</div>
-		<div class="box">X</div>
-		<div class="box">0</div>
+		<div class="box">O</div>
+		<div class="box">O</div>
+		<div class="box">O</div>
 		<div class="box">X</div>
 	</div>
 	<!-- buttons to control -->
-	<button id="playX" onclick="Fun()">Play as X</button>
-	<button id="playO" onclick="Fun">Play as O</button>
-	<button id="stop" onclick="Fun">Play Again</button>
+	<button id="playX" onclick="Fun(event)">Play as X</button>
+	<button id="playO" onclick="Fun(event)">Play as O</button>
+	<button id="stop" onclick="Fun(event)">Play Again</button>
 	
 	<!-- type="text/javascript"
 	src="tictactoe.css"-->

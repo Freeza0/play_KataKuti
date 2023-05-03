@@ -9,25 +9,26 @@
 
 
 <body>
-	<h2 id="heading" onclick="Fun()">Tic Tac Toe</h2>
+	<h2 id="heading">Tic Tac Toe</h2> <!-- add here an onclick option to bring the intro s-->
 	<div id="intro">
-		<p>This is for my friends. plz come and play tic tac toe. this is how the bot will learn to play.</p>
+		<p>This is for my friends. plz come and play tic tac toe. this is how the bot will learn to play. to start playing click play as X / play as O</p>
 	</div>
 	<div id="board">
-		<div class="box">X</div>
-		<div class="box">X</div>
-		<div class="box">O</div>
-		<div class="box">X</div>
-		<div class="box">O</div>
-		<div class="box">O</div>
-		<div class="box">O</div>
-		<div class="box">O</div>
-		<div class="box">X</div>
+		<div id="1" class="box" onclick="click_box(event)">_</div>
+		<div id="2" class="box" onclick="click_box(event)">_</div>
+		<div class="box" onclick="click_box(event)">_</div>
+		<div class="box" onclick="click_box(event)">_</div>
+		<div class="box" onclick="click_box(event)">_</div>
+		<div class="box" onclick="click_box(event)">_</div>
+		<div class="box" onclick="click_box(event)">_</div>
+		<div class="box" onclick="click_box(event)">_</div>
+		<div class="box" onclick="click_box(event)">_</div>
 	</div>
+	<br>
 	<!-- buttons to control -->
-	<button id="playX" onclick="Fun(event)">Play as X</button>
-	<button id="playO" onclick="Fun(event)">Play as O</button>
-	<button id="stop" onclick="Fun(event)">Play Again</button>
+	<button id="playX" onclick="click_option(event, 'X', 'playO')">Play as X</button>
+	<button id="playO" onclick="click_option(event, 'O', 'playX')">Play as O</button>
+	<button id="stop" onclick="reload(event)">Play Again</button>
 	
 	<!-- type="text/javascript"
 	src="tictactoe.css"-->
